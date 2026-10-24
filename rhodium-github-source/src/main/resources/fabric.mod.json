@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "rhodium",
+	"version": "${version}",
+	"name": "Rhodium",
+	"description": "The catalyst for stable FPS.",
+	"authors": [
+		"<USLUDUMAN>"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/rhodium/icon.png",
+	"environment": "client",
+	"mixins": [
+		"rhodium.mixins.json"
+	],
+	"entrypoints": {
+		"client": [
+			"com.rhodium.RhodiumClient"
+		],
+		"modmenu": [
+			"com.rhodium.compat.modmenu.RhodiumModMenuCompat"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"sodium": "*",
+		"iris": "*",
+		"modmenu": ">=21.0.0"
+	}
+}
